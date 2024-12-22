@@ -15,7 +15,8 @@
     <meta name="author" content="Charles Adrian - @driyqnn">
     <meta property="og:locale" content="tl_PH">
     <meta property="og:title" content="Charles Adrian - Portfolio" />
-    <meta property="og:description" content="Showcasing my work in photography, web development, and creative design. Explore my portfolio to see stunning visuals and innovative web projects." />
+    <meta property="og:description"
+        content="Showcasing my work in photography, web development, and creative design. Explore my portfolio to see stunning visuals and innovative web projects." />
     <meta property="og:image" content="./assets/ogogog.png" />
     <meta property="og:url" content="https://portfolio-driyqnn.vercel.app/" />
     <meta property="og:type" content="website" />
@@ -115,7 +116,7 @@
 
 
     <!-- MAIN -->
-    <main id="main" class="w-full  max-w-6xl mx-auto px-4 font-inter">
+    <main id="main" class="w-full  max-w-6xl mx-auto px-4 font-inter ">
 
 
         <section class="mt-48 text-center h-svh ">
@@ -401,33 +402,41 @@
 
         <!-- Featured Projects -->
         <section id="projects" class="container w-full max-w-4xl mx-auto px-4 mt-32">
-        <h2 class="text-2xl font-bold text-center mb-2 up rtrue">Featured Credentials</h2>
-        <p class="text-gray-400 text-sm text-center mb-12 up rtrue">Explore some of the best projects I've worked on</p>
-        
-        <div class="flex flex-wrap justify-center gap-6" id="project-cards">
-        
+            <h2 class="text-2xl font-bold text-center mb-2 up rtrue">Featured Credentials</h2>
+            <p class="text-gray-400 text-sm text-center mb-12 up rtrue">Explore some of the best projects I've worked on
+            </p>
 
-    <template id="project-card-template" class="w-full">
-        <div class="w-full max-h-fit sm:max-w-64  lg:h-[26rem] xs:w-full sm:w-fit lg:w-[calc(33.333%-1rem)] max-w-sm border border-gray-500 rounded-xl overflow-hidden hover:-translate-y-2 transition bg-[#16161b] up rtrue">
-            <a href="" target="_blank" class="block h-44 overflow-hidden">
-                <img class="w-full h-full object-cover" src="" alt="" />
-            </a>
-            <div class="p-5 flex flex-col h-[calc(100%-12rem)]">
-                <a href="" target="_blank" class="mb-2">
-                    <h5 class="text-lg uppercase font-bold tracking-tight text-[#D3D3D3] line-clamp-2"></h5>
-                </a>
-                <p class="mb-3 text-xs font-normal text-gray-400 flex-grow"></p>
-                <a href="" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-[#D3D3D3] bg-gray-700 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-500 transition mt-auto">
-                    Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
-                </a>
+            <div class="flex flex-wrap justify-center gap-6" id="project-cards">
+
+
+                <template id="project-card-template" class="w-full">
+                    <div
+                        class="w-full max-h-fit sm:max-w-64  lg:h-[26rem] xs:w-full sm:w-fit lg:w-[calc(33.333%-1rem)] max-w-sm border border-gray-500 rounded-xl overflow-hidden hover:-translate-y-2 transition bg-[#16161b] up rtrue">
+                        <a href="" target="_blank" class="block h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover" src="" alt="" />
+                        </a>
+                        <div class="p-5 flex flex-col h-[calc(100%-12rem)]">
+                            <a href="" target="_blank" class="mb-2">
+                                <h5 class="text-lg uppercase font-bold tracking-tight text-[#D3D3D3] line-clamp-2"></h5>
+                            </a>
+                            <p class="mb-3 text-xs font-normal text-gray-400 flex-grow"></p>
+
+
+                            <a href="" target="_blank">
+                                <button
+                                    class="flex w-fit text items-center px-3 py-2 mb-4 text-xs font-medium text-center text-[#D3D3D3] bg-gray-700 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-500 transition mt-auto">Read
+                                    more
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </button>
+                        </div>
+                    </div>
+                </template>
             </div>
-        </div>
-    </template>
-    </div>
-    </section>
+        </section>
 
 
 
@@ -602,28 +611,28 @@
                 </a>
 
             </div>
-            <div class="flex justify-start right rtrue">
-                <p class="text-[#d3d3d3] text-xs sm:text-sm md:text-base  pt-3">
+            <div class="flex justify-start right rtrue ">
+                <p class="text-[#d3d3d3] text-xs sm:text-sm md:text-base pb-32  pt-3">
                     &copy; <span id="year"></span> All Rights Reserved.</p>
                 </p>
             </div>
 
         </section>
- 
+
 
     </main>
     <!-- Loader -->
-            <div id="loader-container"
-                class="fixed z-[9999] inset-0 flex items-center justify-center bg-[#090909] duration-300 ease-in-out">
-                <div class="loader"></div>
-               
-                <div class="fixed inset-0 -z-10 overflow-hidden">
-                    <div class="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.2]
-                    ">
-                    </div>
-                </div>
+    <div id="loader-container"
+        class="fixed z-[9999] inset-0 flex items-center justify-center bg-[#090909] duration-300 ease-in-out">
+        <div class="loader"></div>
 
+        <div class="fixed inset-0 -z-10 overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.2]
+                    ">
             </div>
+        </div>
+
+    </div>
 
     <script>
         // Loader 
@@ -636,11 +645,11 @@
 
             body.classList.add('overflow-hidden')
             main.classList.add('hidden')
-            
+
             setTimeout(() => {
-                
+
                 loaderContainer.classList.add('opacity-0', 'transition', 'duration-300', 'ease-in-out');
-                loaderContainer.classList.add('pointer-events-none'); 
+                loaderContainer.classList.add('pointer-events-none');
 
 
                 // Fade in the content
@@ -648,7 +657,8 @@
                 body.classList.remove('overflow-hidden')
                 content.classList.remove('opacity-0');
                 content.classList.add('opacity-100');
-            }, 1200); }
+            }, 1200);
+        }
 
 
 
@@ -726,73 +736,73 @@
 
 
         const projects = [
-    {
-        link: "https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu",
-        imagePath: "./assets/Project2.webp",
-        title: "PRE-DEBUT PHOTOSHOOT",
-        description: "A creative pre-debut photoshoot featuring Lavigne Lyka, designed to celebrate her transition into adulthood."
-    },
-    {
-        link: "https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz",
-        imagePath: "./assets/exp.webp.jpg",
-        title: "BUYLUGANAY '23",
-        description: "Documented Filamer Christian University's Senior High School Intramurals."
-    },
-    
-    {
-        link: "https://www.facebook.com/fcuthes/posts/718351036979716",
-        imagePath: "./assets/Experience2jpg.webp",
-        title: "119TH FOUNDATION ANNIVERSARY",
-        description: "Documented Filamer Christian University's 119th Foundation Anniversary for The Hillside Echo - Senior."
-    },
-    {
-        link: "https://www.facebook.com/share/p/1AmYHrSXKN/",
-        imagePath: "./assets/intramcapsu.jpg",
-        title: "INTRAMURALS '24",
-        description: "Documented CapSU's Intramurals for Pundar Publication."
-    },
-    {
-        link: "https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH",
-        imagePath: "./assets/Experience1.webp",
-        title: "THE HILLSIDE ECHO PHOTOGRAPHY CONTEST",
-        description: "Placed 3rd in a photography contest organized by The Hillside Echo."
-    },
-    {
-        link: "https://fcu-darwin1223-24.vercel.app/",
-        imagePath: "./assets/Project1.webp",
-        title: "DARWIN'S MEMOIR",
-        description: "A collection of memories from Darwin’s senior high journey, cherishing achievements and connections."
-    },
-    {
-        link: "",
-        imagePath: "./assets/capstone.webp",
-        title: "FIREGUARD: A FIRE AND SMOKE DETECTING ROBOT",
-        description: "Built and coded a robot that detects fires, senses gas leaks, alerts users, and extinguishes flames with a water pump."
-    },
-    // Add more project objects as needed
-];
+            {
+                link: "https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu",
+                imagePath: "./assets/Project2.webp",
+                title: "PRE-DEBUT PHOTOSHOOT",
+                description: "A creative pre-debut photoshoot featuring Lavigne Lyka, designed to celebrate her transition into adulthood."
+            },
+            {
+                link: "https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz",
+                imagePath: "./assets/exp.webp.jpg",
+                title: "BUYLUGANAY '23",
+                description: "Documented Filamer Christian University's Senior High School Intramurals."
+            },
 
-const projectCardsContainer = document.getElementById('project-cards');
-const cardTemplate = document.getElementById('project-card-template');
+            {
+                link: "https://www.facebook.com/fcuthes/posts/718351036979716",
+                imagePath: "./assets/Experience2jpg.webp",
+                title: "119TH FOUNDATION ANNIVERSARY",
+                description: "Documented Filamer Christian University's 119th Foundation Anniversary for The Hillside Echo - Senior."
+            },
+            {
+                link: "https://www.facebook.com/share/p/1AmYHrSXKN/",
+                imagePath: "./assets/intramcapsu.jpg",
+                title: "INTRAMURALS '24",
+                description: "Documented CapSU's Intramurals for Pundar Publication."
+            },
+            {
+                link: "https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH",
+                imagePath: "./assets/Experience1.webp",
+                title: "THE HILLSIDE ECHO PHOTOGRAPHY CONTEST",
+                description: "Placed 3rd in a photography contest organized by The Hillside Echo."
+            },
+            {
+                link: "https://fcu-darwin1223-24.vercel.app/",
+                imagePath: "./assets/Project1.webp",
+                title: "DARWIN'S MEMOIR",
+                description: "A collection of memories from Darwin’s senior high journey, cherishing achievements and connections."
+            },
+            {
+                link: "",
+                imagePath: "./assets/capstone.webp",
+                title: "FIREGUARD: A FIRE AND SMOKE DETECTING ROBOT",
+                description: "Built and coded a robot that detects fires, senses gas leaks, alerts users, and extinguishes flames with a water pump."
+            },
+            // Add more project objects as needed
+        ];
 
-projects.forEach(project => {
-    const card = cardTemplate.content.cloneNode(true);
-    
-    const links = card.querySelectorAll('a');
-    links.forEach(link => link.href = project.link);
-    
-    const img = card.querySelector('img');
-    img.src = project.imagePath;
-    img.alt = project.title;
-    
-    const title = card.querySelector('h5');
-    title.textContent = project.title;
-    
-    const description = card.querySelector('p');
-    description.textContent = project.description;
-    
-    projectCardsContainer.appendChild(card);
-});
+        const projectCardsContainer = document.getElementById('project-cards');
+        const cardTemplate = document.getElementById('project-card-template');
+
+        projects.forEach(project => {
+            const card = cardTemplate.content.cloneNode(true);
+
+            const links = card.querySelectorAll('a');
+            links.forEach(link => link.href = project.link);
+
+            const img = card.querySelector('img');
+            img.src = project.imagePath;
+            img.alt = project.title;
+
+            const title = card.querySelector('h5');
+            title.textContent = project.title;
+
+            const description = card.querySelector('p');
+            description.textContent = project.description;
+
+            projectCardsContainer.appendChild(card);
+        });
 
 
 
@@ -817,7 +827,7 @@ projects.forEach(project => {
 
         ScrollReveal().reveal('.rscale', {
             ...defaultConfig,
-            scale: [0.5,1], // Reset true
+            scale: [0.5, 1], // Reset true
         });
 
 

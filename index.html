@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  class="scroll-smooth focus:scroll-auto">
+<html lang="en" class="scroll-smooth focus:scroll-auto">
 
 <head>
     <!-- Meta Information -->
@@ -8,10 +8,19 @@
     <meta property="og:title" content="Charles Adrian - Portfolio">
     <meta property="og:description" content="Personal Portfolio">
     <meta property="og:image" content="/assets/images/screenshot.webp">
-    <meta name="description" content="Showcasing my work in photography, web development, and creative design. Explore my portfolio to see stunning visuals and innovative web projects.">
-    <meta name="keywords" content="HTML, CSS, Tailwind CSS, Web Development, SEO, Portfolio, Photographer, photography, camera, ">
+    <meta name="description"
+        content="Showcasing my work in photography, web development, and creative design. Explore my portfolio to see stunning visuals and innovative web projects.">
+    <meta name="keywords"
+        content="HTML, CSS, Tailwind CSS, Web Development, SEO, Portfolio, Photographer, photography, camera, ">
     <meta name="author" content="Charles Adrian - @driyqnn">
     <meta property="og:locale" content="tl_PH">
+    <meta property="og:title" content="Charles Adrian - Portfolio" />
+    <meta property="og:description" content="Showcasing my work in photography, web development, and creative design. Explore my portfolio to see stunning visuals and innovative web projects." />
+    <meta property="og:image" content="./assets/ogogog.png" />
+    <meta property="og:url" content="https://portfolio-driyqnn.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Charles Adrian - Portfolio" />
+
 
 
 
@@ -38,6 +47,24 @@
     <title>Charles Adrian - Portfolio</title>
 
 
+    <style>
+        html::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: #000000;
+            border-radius: 10px;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: #073b3a;
+            border-radius: 10px;
+        }
+    </style>
+
 </head>
 
 
@@ -46,12 +73,12 @@
 
 <!-- BODY -->
 
-<body class="bg-[#08080a] text-[#D3D3D3] flex flex-col gap-24  items-center font-inter">
-    <header class="fixed z-[999] mt-4 text-xs min-w-72 backdrop-blur-sm border border-[#2e2e2e] max-w-xl
+<body id="body" class="bg-[#08080a] text-[#D3D3D3] flex flex-col gap-24  items-center font-inter">
+    <header class="down delay-l fixed z-[999] mt-4 text-xs min-w-72 backdrop-blur-sm border border-[#2e2e2e] max-w-xl
      py-2 px-3 rounded-full flex items-center bg-black sm:flex
      sm:w-screen">
         <figure class="flex-shrink-0 h-6 w-6 rounded-full overflow-hidden mr-2 ">
-            <a class="" href="#" >
+            <a class="" href="#">
                 <img src="./assets/profile.webp" alt="Profile Pic"
                     class="w-full h-full object-cover filt grayscale transition hover:grayscale-0 avatar">
             </a>
@@ -60,7 +87,7 @@
             <a href="#">
                 <h1 class="text-sm text-gray-200 font-bold">
                     Charles Adrian
-                    
+
                     <span class="text-gray-400 text-xs font-normal sm:hidden"> · BSCE </span>
                     <span class="text-gray-400 text-xs font-normal hidden sm:inline"> · Civil Engineering</span>
                 </h1>
@@ -88,38 +115,39 @@
 
 
     <!-- MAIN -->
-    <main class="w-full  max-w-5xl mx-auto px-4 font-inter">
+    <main id="main" class="w-full  max-w-6xl mx-auto px-4 font-inter">
 
 
         <section class="mt-48 text-center h-svh ">
 
             <!-- Available Badge -->
-            <div class="inline-block mb-6">
+            <div class="down delay-l inline-block mb-6">
                 <span class="px-4 py-1.5 text-xs bg-[#073b3a] text-[#3bc196] rounded-full">
                     Available for New Projects
                 </span>
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight right delay-l">
                 Capturing Moments That
                 <br>
-                <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+                <span class="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent ">
                     Tell Your Story
                 </span>
             </h1>
 
             <!-- Subtitle -->
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto mb-8">
+            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto mb-8 left delay-l">
                 Event photographer and web developer, specializing in creating memorable experiences through the lens
                 and on the web.
             </p>
 
             <!-- Call to Action Buttons -->
-             
-            <div class="flex items-center justify-center gap-4">
+
+            <div class="flex right delay-l items-center justify-center gap-4">
                 <a href="#projects">
-                    <button class=" px-6 py-2 text-[#d3d3d3] bg-[#0b6e4f] rounded-md text-sm hover:bg-transparent border border-[#0b6e4f] hover:text-[#d3d3d3]  transition">
+                    <button
+                        class="left px-6 py-2 text-[#d3d3d3] bg-[#0b6e4f] rounded-md text-sm hover:bg-transparent border border-[#0b6e4f] hover:text-[#d3d3d3]  transition">
                         View Projects
                     </button>
                 </a>
@@ -127,11 +155,11 @@
                 <a
                     href="mailto:flores.charlesadrian@gmail.com?subject=Photography%20Inquiry&body=Hi%20Charles%2C%0D%0A%0D%0AI%20hope%20you're%20doing%20well!%20I'm%20reaching%20out%20to%20inquire%20about%20your%20photography%20services.%20%5BI%E2%80%99m%20planning%20a%20debut%2Fsports%20event%5D%20and%20would%20love%20to%20know%20more%20about%20your%20availability%20and%20pricing.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20necessary%5D">
                     <button
-                        class="px-6  py-2 bg-transparent border border-[#0b6e4f] rounded-md text-sm hover:bg-[#0b6e4f] hover:text-[#d3d3d3] transition-colors">
+                        class=" px-6  py-2 bg-transparent border border-[#0b6e4f] rounded-md text-sm hover:bg-[#0b6e4f] hover:text-[#d3d3d3] transition-colors">
                         Get in Touch
                     </button>
                 </a>
-                
+
             </div>
 
             <!-- Optional: Background Stars Effect -->
@@ -146,37 +174,40 @@
 
         <!-- About Me -->
         <section class="w-full max-w-4xl mx-auto  px-4">
-            <h2 class="text-2xl font-bold text-center mb-2">About <span class="text-[#3bc196]">Me</span></h2>
-            <p class="text-gray-400 text-sm text-center mb-12">Get to know me better</p>
+            <h2 class="right rtrue text-2xl font-bold text-center mb-2">About <span class="text-[#3bc196]">Me</span>
+            </h2>
+            <p class="text-gray-400 text-sm text-center mb-12 left rtrue">Get to know me better</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <img src="./assets/profile.webp" alt="profile pic"
-                    class="hidden h-fit bg-[#111111] rounded-xl border border-[#222222]  items-center justify-center md:aspect-square md:flex">
+                    class="hidden right rtrue h-fit bg-[#111111] rounded-xl border border-[#222222]  items-center justify-center md:aspect-square md:flex">
 
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-2xl font-black ">Charles Adrian B. Flores</h3>
-                        <p class="text-sm text-gray-400">Bachelor of Science in Civil Engineering</p>
+                        <h3 class="left rtrue text-2xl font-black ">Charles Adrian B. Flores</h3>
+                        <p class="text-sm  left rtrue text-gray-400">Bachelor of Science in Civil Engineering</p>
                     </div>
                     <div class="space-y-6">
                         <div>
-                            <h3 class="text-lg font-semibold mb-2">Background</h3>
-                            <p class="text-sm text-gray-400">I started my journey in photography during my Senior High
+                            <h3 class="text-lg font-semibold mb-2 left rtrue">Background</h3>
+                            <p class="text-sm text-gray-400 left rtrue">I started my journey in photography during my
+                                Senior High
                                 School
                                 years,
                                 focusing on candid photography.</p>
                         </div>
 
                         <div>
-                            <h3 class="text-lg font-semibold mb-2">Interests</h3>
-                            <p class="text-sm text-gray-400">Beyond photography and web development, I'm passionate
+                            <h3 class="text-lg font-semibold mb-2 left rtrue">Interests</h3>
+                            <p class="text-sm text-gray-400 left rtrue">Beyond photography and web development, I'm
+                                passionate
                                 about
                                 digital
                                 art, traveling, and exploring new technologies in the creative field.</p>
                         </div>
 
                         <!-- Icons -->
-                        
+
                     </div>
                 </div>
             </div>
@@ -187,14 +218,15 @@
 
         <!-- Skills Section -->
         <section class="w-full max-w-4xl mx-auto px-4 mt-32">
-            <h2 class="text-2xl font-bold text-center mb-2">Skills & Expertise</h2>
-            <p class="text-gray-400 text-sm text-center mb-12">Combining technical prowess with creative vision</p>
+            <h2 class="text-2xl font-bold text-center mb-2 left rtrue">Skills & Expertise</h2>
+            <p class="text-gray-400 text-sm text-center mb-12 right rtrue">Combining technical prowess with creative
+                vision</p>
 
             <div class="grid sm:grid-cols-2 sm:max-w-full xs:max-w-xl md:grid-cols-3 gap-6">
 
                 <!-- Event Photography -->
                 <div
-                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors">
+                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors left rtrue">
                     <div class="mb-4">
                         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none">
@@ -218,7 +250,7 @@
 
                 <!-- Web Development -->
                 <div
-                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors">
+                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors right rtrue">
                     <div class="mb-4">
                         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none">
@@ -241,7 +273,7 @@
 
                 <!-- Client Relations -->
                 <div
-                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors">
+                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors left rtrue">
                     <div class="mb-4">
                         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
                             height="16" color="#969696" fill="none">
@@ -266,20 +298,35 @@
 
                 <!-- Teamwork -->
                 <div
-                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors hidden md:inline md:flex-grow">
+                    class="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#333333] transition-colors hidden md:inline md:flex-grow right rtrue ">
                     <div class="mb-4">
-                        <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path opacity="0.4" d="M6.25 7.5C6.25 5.15279 8.15279 3.25 10.5 3.25C12.8472 3.25 14.75 5.15279 14.75 7.5C14.75 9.84721 12.8472 11.75 10.5 11.75C8.15279 11.75 6.25 9.84721 6.25 7.5Z" fill="#969696"/><path d="M14.0233 11.7235C15.2314 10.7146 16 9.19708 16 7.5C16 5.80292 15.2314 4.28537 14.0233 3.27647C14.1798 3.25898 14.339 3.25 14.5002 3.25C16.8474 3.25 18.7502 5.15279 18.7502 7.5C18.7502 9.84721 16.8474 11.75 14.5002 11.75C14.339 11.75 14.1798 11.741 14.0233 11.7235Z" fill="#969696"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 12.75C19.3023 12.75 19.75 13.1977 19.75 13.75V15.75H21.75C22.3023 15.75 22.75 16.1977 22.75 16.75C22.75 17.3023 22.3023 17.75 21.75 17.75H19.75V19.75C19.75 20.3023 19.3023 20.75 18.75 20.75C18.1977 20.75 17.75 20.3023 17.75 19.75V17.75H15.75C15.1977 17.75 14.75 17.3023 14.75 16.75C14.75 16.1977 15.1977 15.75 15.75 15.75H17.75V13.75C17.75 13.1977 18.1977 12.75 18.75 12.75Z" fill="#969696"/><path opacity="0.4" d="M15.9767 14.5C15.864 14.4316 15.7457 14.3688 15.6214 14.3122C14.1391 13.6364 12.3786 13.25 10.5 13.25C8.62142 13.25 6.86094 13.6364 5.37859 14.3122C3.90039 14.986 3.25 16.5343 3.25 17.9704C3.24995 18.4032 3.2499 18.8744 3.2933 19.1972C3.3411 19.5527 3.45354 19.9284 3.76257 20.2374C4.07159 20.5465 4.44732 20.6589 4.8028 20.7067C5.12561 20.7501 5.52243 20.7501 5.95525 20.75H15.0447C15.4776 20.7501 15.8744 20.7501 16.1972 20.7067C16.3516 20.6859 16.5099 20.653 16.6649 20.597C16.5586 20.3355 16.5 20.0496 16.5 19.75V19H15.75C14.5074 19 13.5 17.9926 13.5 16.75C13.5 15.5074 14.5074 14.5 15.75 14.5H15.9767Z" fill="#969696"/></svg>
+                        <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path opacity="0.4"
+                                d="M6.25 7.5C6.25 5.15279 8.15279 3.25 10.5 3.25C12.8472 3.25 14.75 5.15279 14.75 7.5C14.75 9.84721 12.8472 11.75 10.5 11.75C8.15279 11.75 6.25 9.84721 6.25 7.5Z"
+                                fill="#969696" />
+                            <path
+                                d="M14.0233 11.7235C15.2314 10.7146 16 9.19708 16 7.5C16 5.80292 15.2314 4.28537 14.0233 3.27647C14.1798 3.25898 14.339 3.25 14.5002 3.25C16.8474 3.25 18.7502 5.15279 18.7502 7.5C18.7502 9.84721 16.8474 11.75 14.5002 11.75C14.339 11.75 14.1798 11.741 14.0233 11.7235Z"
+                                fill="#969696" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.75 12.75C19.3023 12.75 19.75 13.1977 19.75 13.75V15.75H21.75C22.3023 15.75 22.75 16.1977 22.75 16.75C22.75 17.3023 22.3023 17.75 21.75 17.75H19.75V19.75C19.75 20.3023 19.3023 20.75 18.75 20.75C18.1977 20.75 17.75 20.3023 17.75 19.75V17.75H15.75C15.1977 17.75 14.75 17.3023 14.75 16.75C14.75 16.1977 15.1977 15.75 15.75 15.75H17.75V13.75C17.75 13.1977 18.1977 12.75 18.75 12.75Z"
+                                fill="#969696" />
+                            <path opacity="0.4"
+                                d="M15.9767 14.5C15.864 14.4316 15.7457 14.3688 15.6214 14.3122C14.1391 13.6364 12.3786 13.25 10.5 13.25C8.62142 13.25 6.86094 13.6364 5.37859 14.3122C3.90039 14.986 3.25 16.5343 3.25 17.9704C3.24995 18.4032 3.2499 18.8744 3.2933 19.1972C3.3411 19.5527 3.45354 19.9284 3.76257 20.2374C4.07159 20.5465 4.44732 20.6589 4.8028 20.7067C5.12561 20.7501 5.52243 20.7501 5.95525 20.75H15.0447C15.4776 20.7501 15.8744 20.7501 16.1972 20.7067C16.3516 20.6859 16.5099 20.653 16.6649 20.597C16.5586 20.3355 16.5 20.0496 16.5 19.75V19H15.75C14.5074 19 13.5 17.9926 13.5 16.75C13.5 15.5074 14.5074 14.5 15.75 14.5H15.9767Z"
+                                fill="#969696" />
+                        </svg>
                     </div>
                     <h3 class="text-lg font-semibold mb-2">Teamwork</h3>
-                    <p class="text-sm text-gray-400">Collaborative mindset with experience in working effectively within diverse teams, ensuring shared goals and successful outcomes.</p>
+                    <p class="text-sm text-gray-400">Collaborative mindset with experience in working effectively within
+                        diverse teams, ensuring shared goals and successful outcomes.</p>
                 </div>
             </div>
         </section>
 
         <!-- Journey -->
         <section class="w-full max-w-4xl mx-auto px-4 mt-32">
-            <h2 class="text-2xl font-bold text-center mb-2">My Journey</h2>
-            <p class="text-gray-400 text-sm text-center mb-12">The path that led me to where I am today</p>
+            <h2 class="text-2xl font-bold text-center mb-2 up rtrue ">My Journey</h2>
+            <p class="text-gray-400 text-sm text-center mb-12 up">The path that led me to where I am today</p>
 
             <div class="relative">
                 <!-- Timeline Line -->
@@ -294,9 +341,11 @@
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#111111]  border-2 border-white rounded-full">
                         </div>
-                        <div class="ml-[calc(50%+2rem)] pl-4">
-                            <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">Freelance Photographer</h3>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Living life and honing my skills as a freelance
+                        <div class="ml-[calc(50%+2rem)] pl-4 left rtrue">
+                            <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">Freelance Photographer
+                            </h3>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Living life and honing my skills
+                                as a freelance
                                 photographer</p>
                             <span class="text-xs md:text-sm font-semibold text-gray-200">2024</span>
                         </div>
@@ -307,9 +356,10 @@
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#111111] border-2 border-white rounded-full">
                         </div>
-                        <div class="mr-[calc(50%+2rem)] text-right">
+                        <div class="mr-[calc(50%+2rem)] text-right right rtrue">
                             <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">First Photoshoot</h3>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Successfully photographed a pre-debut photoshoot for my
+                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Successfully photographed a
+                                pre-debut photoshoot for my
                                 first client</p>
                             <span class="text-xs md:text-sm font-semibold text-gray-200">2023</span>
                         </div>
@@ -320,9 +370,11 @@
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#111111] border-2 border-white rounded-full">
                         </div>
-                        <div class="ml-[calc(50%+2rem)] pl-4">
-                            <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">Photography Journey</h3>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Started exploring event photography as a passion</p>
+                        <div class="ml-[calc(50%+2rem)] pl-4 left rtrue">
+                            <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">Photography Journey
+                            </h3>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-400 ">Started exploring event
+                                photography as a passion</p>
                             <span class="text-xs md:text-sm font-semibold text-gray-200">2021</span>
                         </div>
                     </div>
@@ -332,9 +384,10 @@
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#111111] border-2 border-white rounded-full">
                         </div>
-                        <div class="mr-[calc(50%+2rem)] text-right">
+                        <div class="mr-[calc(50%+2rem)] text-right right rtrue">
                             <h3 class="text-md sm:text-sm md:text-base lg:text-lg font-semibold">Web Development</h3>
-                            <p class="text-xs sm:text-sm md:text-base text-gray-400  md:tec">Started learning web development and completed first
+                            <p class="text-xs sm:text-sm md:text-base text-gray-400  md:tec">Started learning web
+                                development and completed first
                                 projects</p>
                             <span class="text-xs md:text-sm font-semibold text-gray-200">2020</span>
                         </div>
@@ -347,406 +400,449 @@
 
 
         <!-- Featured Projects -->
-        <section id="projects" class="w-full mx-auto px-4 mt-32">
-            
-            <h2 class="text-2xl font-bold text-center mb-2">Featured Credentials</h2> <p class="text-gray-400 text-sm text-center mb-12">Explore some of the best projects I've worked on</p> 
-
-
-            <div class="grid auto-rows-auto auto-cols-2 max-sm:sm:max-w-72 sm:grid-cols-2  gap-6 md:gap-12">
-
-
-                <!-- Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-xl  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition ">
-                    <a href="https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/Project2.webp" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu" target="_blank">
-                            <h5 class="mb-2 text-lg uppercase font-bold tracking-tight text-gray-900 dark:text-white">PRE-DEBUT PHOTOSHOOT</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">A creative pre-debut photoshoot featuring Lavigne Lyka, designed to celebrate her transition into adulthood.</p>
-                        
-                         
-
-                        <a href="https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800  focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <section id="projects" class="container w-full max-w-4xl mx-auto px-4 mt-32">
+        <h2 class="text-2xl font-bold text-center mb-2 up rtrue">Featured Credentials</h2>
+        <p class="text-gray-400 text-sm text-center mb-12 up rtrue">Explore some of the best projects I've worked on</p>
         
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/exp.webp.jpg" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz" target="_blank">
-                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">BUYLUGANAY '23</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">Documented Filamer Christian University's Senior High School Intramurals.</p>
-                        
-                         
-
-                        <a href="https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="https://www.facebook.com/fcuthes/posts/718351036979716" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/Experience2jpg.webp" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://www.facebook.com/fcuthes/posts/718351036979716" target="_blank">
-                            <h5 class="mb-2 text-lg font-black tracking-tight text-gray-900 dark:text-white">119TH FOUNDATION ANNIVERSARY</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">Documented Filamer Christian University's 119th Foundation Anniversary for The Hillside Echo - Senior.</p>
-                        
-                         
-
-                        <a href="https://www.facebook.com/fcuthes/posts/718351036979716" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+        <div class="flex flex-wrap justify-center gap-6" id="project-cards">
         
-                <!-- Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="https://www.facebook.com/share/p/1AmYHrSXKN/" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/intramcapsu.jpg" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://www.facebook.com/share/p/1AmYHrSXKN/" target="_blank">
-                            <h5 class="mb-2 text-lg font-black tracking-tight text-gray-900 dark:text-white">INTRAMURALS '24</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">Documented CapSU's Intramurals for Pundar Publication</p>
-                        
-                         
 
-                        <a href="https://www.facebook.com/share/p/1AmYHrSXKN/" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/Experience1.webp" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH" target="_blank">
-                            <h5 class="mb-2 text-lg font-black tracking-tight text-gray-900 dark:text-white">THE HILLSIDE ECHO PHOTOGRAPHY CONTEST</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">Placed 3rd in a photography contest organized by The Hillside Echo.</p>
-                        
-                         
-
-                        <a href="https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="https://fcu-darwin1223-24.vercel.app/" target="_blank" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/Project1.webp" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://fcu-darwin1223-24.vercel.app/" target="_blank">
-                            <h5 class="mb-2 text-lg font-black tracking-tight text-gray-900 dark:text-white">DARWIN'S MEMOIR</h5>
-                        </a>
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">A collection of memories from Darwin’s senior high journey, cherishing achievements and connections.</p>
-                        
-                         
-
-                        <a href="https://fcu-darwin1223-24.vercel.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#073b3a] dark:hover:bg-[#0e605f] dark:focus:ring-blue-800 transition">
-                            Read more
-                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-        
-                
-                <div class="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:-translate-y-2 transition">
-                    <a href="#" class="block h-60 overflow-hidden">
-                        <img class="w-full h-full object-cover" src="./assets/capstone.webp" alt="" />
-                    </a>
-                    <div class="p-5">
-                      
-                            <h5 class="mb-2 text-lg font-black tracking-tight text-gray-900 dark:text-white">FIREGUARD: A FIRE AND SMOKE DETECTING ROBOT</h5>
-                     
-                        <p class="mb-3 text-xs font-normal text-gray-700 dark:text-gray-400">Built and coded a robot that detects fires, senses gas leaks, alerts users, and extinguishes flames with a water pump.</p>
-                        
-                         
-
-                        
-                    </div>
-                </div>
-        
-                
+    <template id="project-card-template" class="w-full">
+        <div class="w-full max-h-fit sm:max-w-64  lg:h-[26rem] xs:w-full sm:w-fit lg:w-[calc(33.333%-1rem)] max-w-sm border border-gray-500 rounded-xl overflow-hidden hover:-translate-y-2 transition bg-[#16161b] up rtrue">
+            <a href="" target="_blank" class="block h-44 overflow-hidden">
+                <img class="w-full h-full object-cover" src="" alt="" />
+            </a>
+            <div class="p-5 flex flex-col h-[calc(100%-12rem)]">
+                <a href="" target="_blank" class="mb-2">
+                    <h5 class="text-lg uppercase font-bold tracking-tight text-[#D3D3D3] line-clamp-2"></h5>
+                </a>
+                <p class="mb-3 text-xs font-normal text-gray-400 flex-grow"></p>
+                <a href="" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-[#D3D3D3] bg-gray-700 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-500 transition mt-auto">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
             </div>
+        </div>
+    </template>
+    </div>
+    </section>
+
+
+
+
+        <section id="contact" class="w-full max-w-4xl mx-auto px-4 mt-32 text-center">
+            <h2 class="text-2xl font-bold mb-2 up rtrue">Let's Connect</h2>
+            <p class="text-gray-400 text-sm mb-12 up rtrue">
+                Let's create something amazing together. If you think I’d be a great fit for your project, email me—I’m
+                open to new opportunities.
+            </p>
+
+            <!-- Get in Touch button -->
+            <div class="flex justify-center rscale rtrue">
+                <a
+                    href="mailto:flores.charlesadrian@gmail.com?subject=Photography%20Inquiry&body=Hi%20Charles%2C%0D%0A%0D%0AI%20hope%20you're%20doing%20well!%20I'm%20reaching%20out%20to%20inquire%20about%20your%20photography%20services.%20%5BI%E2%80%99m%20planning%20a%20debut%2Fsports%20event%5D%20and%20would%20love%20to%20know%20more%20about%20your%20availability%20and%20pricing.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20necessary%5D">
+                    <button
+                        class="flex items-center border gap-2 px-8 py-3 text-[#484848] bg-white  border-[#0b6e4f] rounded-lg text-sm hover:bg-transparent hover:border hover:border-dashed  hover:text-[#d3d3d3] transition-colors mb-10">
+                        <!-- Email Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class=" stroke-slate-500">
+                            <path opacity="0.4"
+                                d="M9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756V13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9392 8.41261 21.9097 7.0282 21.5259 6L12 11L2.47411 6C2.09032 7.0282 2.0608 8.4126 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634Z"
+                                fill="#484848" />
+                            <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        Get in Touch
+                    </button>
+                </a>
+            </div>
+
+
+
+            <div class="grid gap-4 sm:grid-cols-2">
+
+
+
+
+                <!-- Messenger Button -->
+                <a href="https://m.me/driyqnn" target="_blank"
+                    class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200 rscale rtrue">
+
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 1.24998C6.06294 1.24998 1.25 6.06292 1.25 12C1.25 13.4809 1.54987 14.8937 2.09292 16.1794C2.23537 16.5167 2.33141 16.7447 2.39555 16.9198C2.46098 17.0985 2.47017 17.1631 2.47132 17.1797C2.47782 17.2736 2.45406 17.4013 2.2919 18.0074L1.27549 21.8061C1.20626 22.0649 1.28027 22.3409 1.46967 22.5303C1.65907 22.7197 1.9351 22.7937 2.19386 22.7245L5.99263 21.7081C6.59866 21.5459 6.72634 21.5222 6.82024 21.5287C6.8369 21.5298 6.90153 21.539 7.08018 21.6044C7.25532 21.6686 7.48325 21.7646 7.82055 21.9071C9.10632 22.4501 10.5191 22.75 12 22.75C17.9371 22.75 22.75 17.937 22.75 12C22.75 6.06292 17.9371 1.24998 12 1.24998ZM13.7007 14.6584C14.0649 14.6584 14.3662 14.5347 14.6095 14.3766C14.692 14.323 14.7332 14.2963 14.8836 14.147C15.0341 13.9976 15.1033 13.8932 15.2419 13.6844L17.932 9.62857C18.0414 9.46368 18.0165 9.24148 17.8735 9.10636C17.7252 8.96624 17.4975 8.96432 17.347 9.10191L14.3658 11.8271C13.9948 12.1662 13.4374 12.1344 13.1194 11.7428L12.4485 10.9169L12.4115 10.8713L12.4115 10.8713L12.4114 10.8713C12.1191 10.5113 11.8385 10.1657 11.577 9.91839C11.2963 9.65284 10.8769 9.34155 10.2993 9.34155C9.9351 9.34155 9.63379 9.46535 9.39048 9.6234C9.30803 9.67696 9.26681 9.70374 9.11637 9.85305C8.96594 10.0024 8.89668 10.1068 8.75816 10.3156L6.06793 14.3714C5.95856 14.5363 5.98347 14.7585 6.12648 14.8936C6.27476 15.0337 6.50243 15.0356 6.65294 14.8981L9.63424 12.1729C10.0052 11.8338 10.5626 11.8656 10.8807 12.2572L11.5516 13.0831L11.5885 13.1287C11.8808 13.4887 12.1615 13.8343 12.423 14.0816C12.7038 14.3472 13.1231 14.6584 13.7007 14.6584Z"
+                                fill="#969696" />
+                        </svg>
+
+                        <span class="text-sm lg:text-lg">Facebook Messenger</span>
+                    </div>
+                    <!-- Arrow icon placed to the far right of the button -->
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z"
+                            fill="#969696" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696" />
+                    </svg>
+
+                </a>
+
+
+
+
+
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/driyqnn" target="_blank"
+                    class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200 rscale rtrue">
+
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.0572 1.75H12.0572C14.2479 1.74999 15.9686 1.74998 17.312 1.93059C18.6886 2.11568 19.7809 2.50271 20.6391 3.36091C21.4973 4.21911 21.8843 5.31137 22.0694 6.68802C22.25 8.03144 22.25 9.7521 22.25 11.9428V11.9428V12.0572V12.0572C22.25 14.2479 22.25 15.9686 22.0694 17.312C21.8843 18.6886 21.4973 19.7809 20.6391 20.6391C19.7809 21.4973 18.6886 21.8843 17.312 22.0694C15.9686 22.25 14.2479 22.25 12.0572 22.25H12.0572H11.9428H11.9428C9.7521 22.25 8.03144 22.25 6.68802 22.0694C5.31137 21.8843 4.21911 21.4973 3.36091 20.6391C2.50272 19.7809 2.11568 18.6886 1.93059 17.312C1.74998 15.9686 1.74999 14.2479 1.75 12.0572V11.9428C1.74999 9.75212 1.74998 8.03144 1.93059 6.68802C2.11568 5.31137 2.50272 4.21911 3.36091 3.36091C4.21911 2.50271 5.31137 2.11568 6.68802 1.93059C8.03143 1.74998 9.7521 1.74999 11.9428 1.75H11.9428H12.0572ZM16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12ZM17.5123 7.5C18.0621 7.5 18.5078 7.05229 18.5078 6.5C18.5078 5.94772 18.0621 5.5 17.5123 5.5H17.5033C16.9535 5.5 16.5078 5.94772 16.5078 6.5C16.5078 7.05228 16.9535 7.5 17.5033 7.5H17.5123Z"
+                                fill="#969696" />
+                        </svg>
+
+                        <span class="text-sm lg:text-lg">Instagram</span>
+                    </div>
+                    <!-- Arrow icon placed to the far right of the button -->
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z"
+                            fill="#969696" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696" />
+                    </svg>
+
+                </a>
+
+
+                <!-- Telegram Button -->
+                <a href="https://t.me/driyqnn" target="_blank"
+                    class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200 rscale rtrue">
+
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14.7041 19.6345L14.7041 19.6344L12.0442 16.6103C10.7274 15.1131 10.5714 14.4552 10.6581 14.3134L11.6564 13.5094L15.7027 10.3444C16.029 10.0892 16.0866 9.61786 15.8314 9.29159C15.5762 8.96533 15.1048 8.90772 14.7785 9.16292L10.728 12.3311L9.50989 13.3253C9.22553 13.6305 9.04418 14.1524 9.24197 14.8946C9.42654 15.5872 9.94427 16.5026 11.0466 17.7593L10.6395 18.5622C10.3765 18.9277 10.1324 19.2671 9.90771 19.4997C9.68445 19.7308 9.27877 20.0705 8.71374 19.9581C8.15614 19.8472 7.90592 19.3862 7.78203 19.0904C7.65621 18.7899 7.54964 18.3824 7.43402 17.9404L6.93252 16.0239C6.65396 14.9594 6.55777 14.6534 6.37651 14.4282C6.35363 14.3998 6.3298 14.3723 6.30509 14.3459C6.11372 14.141 5.84345 14.0149 4.8535 13.6181L4.79927 13.5963C3.82368 13.2053 3.02006 12.8832 2.45798 12.5667C1.91344 12.2601 1.3254 11.8144 1.25775 11.0623C1.24724 10.9454 1.24742 10.8278 1.25829 10.7109C1.32825 9.95901 1.91775 9.51516 2.46325 9.21037C3.02632 8.89576 3.83094 8.57633 4.80773 8.18854L16.7918 3.43052C18.0177 2.94379 19.02 2.54579 19.8076 2.36434C20.6106 2.17935 21.4401 2.15976 22.0901 2.76101C22.7273 3.35039 22.8036 4.18068 22.7242 5.01747C22.6454 5.8477 22.3864 6.92742 22.0669 8.2593L19.6472 18.3463L19.6472 18.3464C19.4436 19.1954 19.2717 19.9121 19.0655 20.4321C18.8573 20.9575 18.5233 21.5216 17.8484 21.7001C17.1654 21.8807 16.6009 21.544 16.1719 21.1809C15.7505 20.8243 15.2699 20.2779 14.7041 19.6345Z"
+                                fill="#969696" />
+                        </svg>
+
+                        <span class="text-sm lg:text-lg">Telegram</span>
+                    </div>
+
+                    <!-- Arrow icon placed to the far right of the button -->
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z"
+                            fill="#969696" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696" />
+                    </svg>
+
+                </a>
+
+
+                <!-- Github Button -->
+                <a href="https://www.github.com/driyqnn" target="_blank"
+                    class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200 rscale rtrue">
+
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.5 1.25C6.21592 1.25 5.95622 1.4105 5.82918 1.66459L5.82866 1.66563L5.82805 1.66686L5.82656 1.66987L5.82252 1.67814L5.81044 1.70342C5.80069 1.72411 5.78767 1.75243 5.77207 1.78789C5.7409 1.85874 5.69929 1.95846 5.65299 2.0831C5.56066 2.33166 5.44811 2.68348 5.3631 3.10631C5.21391 3.84838 5.14273 4.84483 5.44792 5.89115C5.12844 6.32469 4.84982 6.79949 4.64268 7.37522C4.38286 8.09734 4.25 8.93735 4.25 10C4.25 11.6701 4.78721 13.1773 5.8315 14.422C6.72886 15.4916 7.97729 16.3406 9.52218 16.9468C9.3879 17.3684 9.24902 17.9493 9.24742 18.5701L9.24741 18.5721V19.7537C9.24303 19.7549 9.23865 19.756 9.23427 19.7572C7.81808 20.148 6.60733 20.0559 5.59605 19.565C4.57799 19.0708 3.64565 18.1156 2.90157 16.5671C2.66236 16.0693 2.0649 15.8597 1.56711 16.0989C1.06932 16.3381 0.859689 16.9356 1.09889 17.4334C1.98506 19.2775 3.19975 20.625 4.72265 21.3643C6.10397 22.0348 7.64384 22.1587 9.24741 21.8128V22C9.24741 22.4142 9.5832 22.75 9.99741 22.75L17.0028 22.75C17.2017 22.75 17.3925 22.671 17.5331 22.5303C17.6738 22.3897 17.7528 22.1989 17.7528 22L17.7528 18.5721L17.7528 18.5701C17.7512 17.9493 17.6123 17.3684 17.478 16.9468C19.0229 16.3406 20.2713 15.4916 21.1687 14.422C22.213 13.1773 22.7502 11.6701 22.7502 10C22.7502 8.93735 22.6173 8.09735 22.3575 7.37522C22.1504 6.79948 21.8717 6.32467 21.5522 5.89113C21.8574 4.84481 21.7861 3.84836 21.6369 3.10629C21.5519 2.68347 21.4393 2.33165 21.347 2.08309C21.3007 1.95845 21.2591 1.85873 21.2279 1.78788C21.2123 1.75243 21.1993 1.72411 21.1896 1.70342L21.1775 1.67813L21.1734 1.66987L21.1719 1.66686L21.1713 1.66563L21.1708 1.66459C21.0438 1.4105 20.7841 1.25 20.5 1.25C18.9722 1.25 17.5766 1.74449 16.3864 2.6325C15.5268 2.30364 14.4938 2.15404 13.5 2.15404C12.5062 2.15404 11.4732 2.30364 10.6136 2.63249C9.42342 1.74449 8.02776 1.25 6.5 1.25Z"
+                                fill="#969696" />
+                        </svg>
+
+                        <span class="text-sm lg:text-lg">Github</span>
+                    </div>
+                    <!-- Arrow icon placed to the far right of the button -->
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z"
+                            fill="#969696" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696" />
+                    </svg>
+
+                </a>
+
+                <!-- Read CV Button -->
+                <a href="https://read.cv/driyqnn" target="_blank"
+                    class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200 rscale rtrue">
+
+                    <div class="flex items-center gap-4">
+                        <svg class="size-6 transition md:size-7 rotate-[25deg]" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.50017 1.25C3.9814 1.25 2.75018 2.4812 2.75017 3.99998L2.75003 20C2.75002 21.5188 3.98124 22.75 5.50003 22.75H18.5C20.0188 22.75 21.25 21.5188 21.25 20V4C21.25 2.48122 20.0188 1.25 18.5 1.25H5.50017ZM8.00003 6C7.44775 6 7.00003 6.44772 7.00003 7C7.00003 7.55228 7.44775 8 8.00003 8H16C16.5523 8 17 7.55228 17 7C17 6.44772 16.5523 6 16 6H8.00003ZM8.00003 11C7.44775 11 7.00003 11.4477 7.00003 12C7.00003 12.5523 7.44775 13 8.00003 13H16C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11H8.00003ZM8.00003 16C7.44775 16 7.00003 16.4477 7.00003 17C7.00003 17.5523 7.44775 18 8.00003 18H12C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16L8.00003 16Z"
+                                fill="#969696" />
+                        </svg>
+
+                        <span class="text-sm lg:text-lg">Read.cv</span>
+                    </div>
+                    <!-- Arrow icon placed to the far right of the button -->
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z"
+                            fill="#969696" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696" />
+                    </svg>
+
+                </a>
+
+            </div>
+            <div class="flex justify-start right rtrue">
+                <p class="text-[#d3d3d3] text-xs sm:text-sm md:text-base  pt-3">
+                    &copy; <span id="year"></span> All Rights Reserved.</p>
+                </p>
+            </div>
+
         </section>
-        
-        
-
-<section id="contact" class="w-full max-w-4xl mx-auto px-4 mt-32 text-center">
-    <h2 class="text-2xl font-bold mb-2">Let's Connect</h2>
-    <p class="text-gray-400 text-sm mb-12">
-        Let's create something amazing together. If you think I’d be a great fit for your project, email me—I’m open to new opportunities.
-    </p>
-
-    <!-- Get in Touch button -->
-    <div class="flex justify-center">
-        <a href="mailto:flores.charlesadrian@gmail.com?subject=Photography%20Inquiry&body=Hi%20Charles%2C%0D%0A%0D%0AI%20hope%20you're%20doing%20well!%20I'm%20reaching%20out%20to%20inquire%20about%20your%20photography%20services.%20%5BI%E2%80%99m%20planning%20a%20debut%2Fsports%20event%5D%20and%20would%20love%20to%20know%20more%20about%20your%20availability%20and%20pricing.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you!%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20necessary%5D">
-            <button class="flex items-center border gap-2 px-8 py-3 text-[#484848] bg-white  border-[#0b6e4f] rounded-lg text-sm hover:bg-transparent hover:border hover:border-dashed  hover:text-[#d3d3d3] transition-colors mb-10">
-                <!-- Email Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class=" stroke-slate-500">
-                    <path opacity="0.4" d="M9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756V13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9392 8.41261 21.9097 7.0282 21.5259 6L12 11L2.47411 6C2.09032 7.0282 2.0608 8.4126 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634Z" fill="#484848"/>
-                    <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                    <path d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                </svg>
-                Get in Touch
-            </button>
-        </a>
-    </div>
-
-
-
-           <div class="grid gap-4 sm:grid-cols-2">
-
-
-
-
-    <!-- Messenger Button -->
-    <a href="https://m.me/driyqnn" target="_blank" class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200">
-
-        <div class="flex items-center gap-4">
-            <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.24998C6.06294 1.24998 1.25 6.06292 1.25 12C1.25 13.4809 1.54987 14.8937 2.09292 16.1794C2.23537 16.5167 2.33141 16.7447 2.39555 16.9198C2.46098 17.0985 2.47017 17.1631 2.47132 17.1797C2.47782 17.2736 2.45406 17.4013 2.2919 18.0074L1.27549 21.8061C1.20626 22.0649 1.28027 22.3409 1.46967 22.5303C1.65907 22.7197 1.9351 22.7937 2.19386 22.7245L5.99263 21.7081C6.59866 21.5459 6.72634 21.5222 6.82024 21.5287C6.8369 21.5298 6.90153 21.539 7.08018 21.6044C7.25532 21.6686 7.48325 21.7646 7.82055 21.9071C9.10632 22.4501 10.5191 22.75 12 22.75C17.9371 22.75 22.75 17.937 22.75 12C22.75 6.06292 17.9371 1.24998 12 1.24998ZM13.7007 14.6584C14.0649 14.6584 14.3662 14.5347 14.6095 14.3766C14.692 14.323 14.7332 14.2963 14.8836 14.147C15.0341 13.9976 15.1033 13.8932 15.2419 13.6844L17.932 9.62857C18.0414 9.46368 18.0165 9.24148 17.8735 9.10636C17.7252 8.96624 17.4975 8.96432 17.347 9.10191L14.3658 11.8271C13.9948 12.1662 13.4374 12.1344 13.1194 11.7428L12.4485 10.9169L12.4115 10.8713L12.4115 10.8713L12.4114 10.8713C12.1191 10.5113 11.8385 10.1657 11.577 9.91839C11.2963 9.65284 10.8769 9.34155 10.2993 9.34155C9.9351 9.34155 9.63379 9.46535 9.39048 9.6234C9.30803 9.67696 9.26681 9.70374 9.11637 9.85305C8.96594 10.0024 8.89668 10.1068 8.75816 10.3156L6.06793 14.3714C5.95856 14.5363 5.98347 14.7585 6.12648 14.8936C6.27476 15.0337 6.50243 15.0356 6.65294 14.8981L9.63424 12.1729C10.0052 11.8338 10.5626 11.8656 10.8807 12.2572L11.5516 13.0831L11.5885 13.1287C11.8808 13.4887 12.1615 13.8343 12.423 14.0816C12.7038 14.3472 13.1231 14.6584 13.7007 14.6584Z" fill="#969696"/>
-        </svg>
-        
-            <span class="text-sm lg:text-lg">Facebook Messenger</span>
-        </div>
-        <!-- Arrow icon placed to the far right of the button -->
-        <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z" fill="#969696"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696"/>
-        </svg>
-
-    </a>
-
-
-    
-
-
-    <!-- Instagram Button -->
-    <a href="https://www.instagram.com/driyqnn" target="_blank" class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200">
-      
-        <div class="flex items-center gap-4">
-            <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0572 1.75H12.0572C14.2479 1.74999 15.9686 1.74998 17.312 1.93059C18.6886 2.11568 19.7809 2.50271 20.6391 3.36091C21.4973 4.21911 21.8843 5.31137 22.0694 6.68802C22.25 8.03144 22.25 9.7521 22.25 11.9428V11.9428V12.0572V12.0572C22.25 14.2479 22.25 15.9686 22.0694 17.312C21.8843 18.6886 21.4973 19.7809 20.6391 20.6391C19.7809 21.4973 18.6886 21.8843 17.312 22.0694C15.9686 22.25 14.2479 22.25 12.0572 22.25H12.0572H11.9428H11.9428C9.7521 22.25 8.03144 22.25 6.68802 22.0694C5.31137 21.8843 4.21911 21.4973 3.36091 20.6391C2.50272 19.7809 2.11568 18.6886 1.93059 17.312C1.74998 15.9686 1.74999 14.2479 1.75 12.0572V11.9428C1.74999 9.75212 1.74998 8.03144 1.93059 6.68802C2.11568 5.31137 2.50272 4.21911 3.36091 3.36091C4.21911 2.50271 5.31137 2.11568 6.68802 1.93059C8.03143 1.74998 9.7521 1.74999 11.9428 1.75H11.9428H12.0572ZM16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12ZM17.5123 7.5C18.0621 7.5 18.5078 7.05229 18.5078 6.5C18.5078 5.94772 18.0621 5.5 17.5123 5.5H17.5033C16.9535 5.5 16.5078 5.94772 16.5078 6.5C16.5078 7.05228 16.9535 7.5 17.5033 7.5H17.5123Z" fill="#969696"/>
-        </svg>
-        
-            <span class="text-sm lg:text-lg">Instagram</span>
-    </div>
-        <!-- Arrow icon placed to the far right of the button -->
-        <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z" fill="#969696"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696"/>
-        </svg>
-     
-    </a>
-
-
-    <!-- Telegram Button -->
-    <a href="https://t.me/driyqnn" target="_blank" class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200">
-        
-        <div class="flex items-center gap-4">
-            <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M14.7041 19.6345L14.7041 19.6344L12.0442 16.6103C10.7274 15.1131 10.5714 14.4552 10.6581 14.3134L11.6564 13.5094L15.7027 10.3444C16.029 10.0892 16.0866 9.61786 15.8314 9.29159C15.5762 8.96533 15.1048 8.90772 14.7785 9.16292L10.728 12.3311L9.50989 13.3253C9.22553 13.6305 9.04418 14.1524 9.24197 14.8946C9.42654 15.5872 9.94427 16.5026 11.0466 17.7593L10.6395 18.5622C10.3765 18.9277 10.1324 19.2671 9.90771 19.4997C9.68445 19.7308 9.27877 20.0705 8.71374 19.9581C8.15614 19.8472 7.90592 19.3862 7.78203 19.0904C7.65621 18.7899 7.54964 18.3824 7.43402 17.9404L6.93252 16.0239C6.65396 14.9594 6.55777 14.6534 6.37651 14.4282C6.35363 14.3998 6.3298 14.3723 6.30509 14.3459C6.11372 14.141 5.84345 14.0149 4.8535 13.6181L4.79927 13.5963C3.82368 13.2053 3.02006 12.8832 2.45798 12.5667C1.91344 12.2601 1.3254 11.8144 1.25775 11.0623C1.24724 10.9454 1.24742 10.8278 1.25829 10.7109C1.32825 9.95901 1.91775 9.51516 2.46325 9.21037C3.02632 8.89576 3.83094 8.57633 4.80773 8.18854L16.7918 3.43052C18.0177 2.94379 19.02 2.54579 19.8076 2.36434C20.6106 2.17935 21.4401 2.15976 22.0901 2.76101C22.7273 3.35039 22.8036 4.18068 22.7242 5.01747C22.6454 5.8477 22.3864 6.92742 22.0669 8.2593L19.6472 18.3463L19.6472 18.3464C19.4436 19.1954 19.2717 19.9121 19.0655 20.4321C18.8573 20.9575 18.5233 21.5216 17.8484 21.7001C17.1654 21.8807 16.6009 21.544 16.1719 21.1809C15.7505 20.8243 15.2699 20.2779 14.7041 19.6345Z" fill="#969696"/>
-        </svg>
-        
-            <span class="text-sm lg:text-lg">Telegram</span>
-    </div>
-
-        <!-- Arrow icon placed to the far right of the button -->
-        <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z" fill="#969696"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696"/>
-        </svg>
-      
-    </a>
-
-
-    <!-- Github Button -->
-    <a href="https://www.github.com/driyqnn" target="_blank" class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200">
-       
-        <div class="flex items-center gap-4">
-            <svg class="size-6 transition md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 1.25C6.21592 1.25 5.95622 1.4105 5.82918 1.66459L5.82866 1.66563L5.82805 1.66686L5.82656 1.66987L5.82252 1.67814L5.81044 1.70342C5.80069 1.72411 5.78767 1.75243 5.77207 1.78789C5.7409 1.85874 5.69929 1.95846 5.65299 2.0831C5.56066 2.33166 5.44811 2.68348 5.3631 3.10631C5.21391 3.84838 5.14273 4.84483 5.44792 5.89115C5.12844 6.32469 4.84982 6.79949 4.64268 7.37522C4.38286 8.09734 4.25 8.93735 4.25 10C4.25 11.6701 4.78721 13.1773 5.8315 14.422C6.72886 15.4916 7.97729 16.3406 9.52218 16.9468C9.3879 17.3684 9.24902 17.9493 9.24742 18.5701L9.24741 18.5721V19.7537C9.24303 19.7549 9.23865 19.756 9.23427 19.7572C7.81808 20.148 6.60733 20.0559 5.59605 19.565C4.57799 19.0708 3.64565 18.1156 2.90157 16.5671C2.66236 16.0693 2.0649 15.8597 1.56711 16.0989C1.06932 16.3381 0.859689 16.9356 1.09889 17.4334C1.98506 19.2775 3.19975 20.625 4.72265 21.3643C6.10397 22.0348 7.64384 22.1587 9.24741 21.8128V22C9.24741 22.4142 9.5832 22.75 9.99741 22.75L17.0028 22.75C17.2017 22.75 17.3925 22.671 17.5331 22.5303C17.6738 22.3897 17.7528 22.1989 17.7528 22L17.7528 18.5721L17.7528 18.5701C17.7512 17.9493 17.6123 17.3684 17.478 16.9468C19.0229 16.3406 20.2713 15.4916 21.1687 14.422C22.213 13.1773 22.7502 11.6701 22.7502 10C22.7502 8.93735 22.6173 8.09735 22.3575 7.37522C22.1504 6.79948 21.8717 6.32467 21.5522 5.89113C21.8574 4.84481 21.7861 3.84836 21.6369 3.10629C21.5519 2.68347 21.4393 2.33165 21.347 2.08309C21.3007 1.95845 21.2591 1.85873 21.2279 1.78788C21.2123 1.75243 21.1993 1.72411 21.1896 1.70342L21.1775 1.67813L21.1734 1.66987L21.1719 1.66686L21.1713 1.66563L21.1708 1.66459C21.0438 1.4105 20.7841 1.25 20.5 1.25C18.9722 1.25 17.5766 1.74449 16.3864 2.6325C15.5268 2.30364 14.4938 2.15404 13.5 2.15404C12.5062 2.15404 11.4732 2.30364 10.6136 2.63249C9.42342 1.74449 8.02776 1.25 6.5 1.25Z" fill="#969696"/>
-        </svg>
-        
-            <span class="text-sm lg:text-lg">Github</span>
-        </div>
-        <!-- Arrow icon placed to the far right of the button -->
-        <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z" fill="#969696"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696"/>
-        </svg>
-      
-    </a>
-
-<!-- Read CV Button -->
-    <a href="https://read.cv/driyqnn" target="_blank" class="flex items-center justify-between border border-dashed border-gray-700 px-4 py-6 rounded-xl hover:bg-[#c7c7c714]  transition duration-200">
-       
-        <div class="flex items-center gap-4">
-            <svg class="size-6 transition md:size-7 rotate-[25deg]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.50017 1.25C3.9814 1.25 2.75018 2.4812 2.75017 3.99998L2.75003 20C2.75002 21.5188 3.98124 22.75 5.50003 22.75H18.5C20.0188 22.75 21.25 21.5188 21.25 20V4C21.25 2.48122 20.0188 1.25 18.5 1.25H5.50017ZM8.00003 6C7.44775 6 7.00003 6.44772 7.00003 7C7.00003 7.55228 7.44775 8 8.00003 8H16C16.5523 8 17 7.55228 17 7C17 6.44772 16.5523 6 16 6H8.00003ZM8.00003 11C7.44775 11 7.00003 11.4477 7.00003 12C7.00003 12.5523 7.44775 13 8.00003 13H16C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11H8.00003ZM8.00003 16C7.44775 16 7.00003 16.4477 7.00003 17C7.00003 17.5523 7.44775 18 8.00003 18H12C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16L8.00003 16Z" fill="#969696"/>
-        </svg>
-        
-            <span class="text-sm lg:text-lg">Read.cv</span>
-    </div>
-        <!-- Arrow icon placed to the far right of the button -->
-        <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5002 6.91409L6.41409 19.0003L4.99988 17.5861L17.086 5.49988L18.5002 6.91409Z" fill="#969696"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5H19V17H17V7H7V5Z" fill="#969696"/>
-        </svg>
-       
-    </a>
-
-</div>
-<div class="flex justify-start">
-    <p class="text-[#d3d3d3] text-xs sm:text-sm md:text-base lg:text-lg pt-3">
-        &copy; <span id="year"></span> All Rights Reserved.</p>
-    </p>
-</div>
-
-</section>
-<div class=" flex flex-col pt-20">
-  
-
-<!-- Loader -->
- <div id="loader-container" class="fixed z-[9999] inset-0 flex items-center justify-center bg-[#090909] duration-300 ease-in-out">
-    <div class="loader"></div>
-     <!-- Optional: Background Stars Effect -->
-            <div class="fixed inset-0 -z-10 overflow-hidden">
-                <div class="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.2]
-                    ">
-                </div>
-            </div>
-
-  </div>
-
+ 
 
     </main>
+    <!-- Loader -->
+            <div id="loader-container"
+                class="fixed z-[9999] inset-0 flex items-center justify-center bg-[#090909] duration-300 ease-in-out">
+                <div class="loader"></div>
+               
+                <div class="fixed inset-0 -z-10 overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.2]
+                    ">
+                    </div>
+                </div>
+
+            </div>
 
     <script>
-// Loader 
-// Wait for the page to load before hiding the loader
-window.onload = function () {
-  const loaderContainer = document.getElementById('loader-container');
-  const content = document.getElementById('content');
+        // Loader 
+        // Wait for the page to load before hiding the loader
+        window.onload = function () {
+            const loaderContainer = document.getElementById('loader-container');
+            const content = document.getElementById('content');
+            const body = document.getElementById('body');
+            const main = document.getElementById('main')
 
-  // Set a delay of 2.5 seconds to simulate the loading process
-  setTimeout(() => {
-    // Hide the loader and show the content with a fade-in effect
-    loaderContainer.classList.add('opacity-0', 'transition', 'duration-300', 'ease-in-out');
-    loaderContainer.classList.add('pointer-events-none'); // Disable interaction with loader
-    
-    // Fade in the content
-    content.classList.remove('opacity-0');
-    content.classList.add('opacity-100');
-  }, 2000); // 2.5 seconds loading time
-};
+            body.classList.add('overflow-hidden')
+            main.classList.add('hidden')
+            
+            setTimeout(() => {
+                
+                loaderContainer.classList.add('opacity-0', 'transition', 'duration-300', 'ease-in-out');
+                loaderContainer.classList.add('pointer-events-none'); 
 
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                // Fade in the content
+                main.classList.remove('hidden')
+                body.classList.remove('overflow-hidden')
+                content.classList.remove('opacity-0');
+                content.classList.add('opacity-100');
+            }, 1200); }
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+
+            // Copy email functionality
+            const copyButton = document.getElementById('copyButton');
+            const emailInput = document.getElementById('emailInput');
+
+            copyButton.addEventListener('click', () => {
+                // Select the email input field content
+                emailInput.select();
+                emailInput.setSelectionRange(0, 99999);  // For mobile devices
+
+                // Use Clipboard API to copy the email text
+                navigator.clipboard.writeText(emailInput.value).then(() => {
+                    // Change button text to 'Copied!' and add the success class
+                    copyButton.textContent = 'Copied!';
+                    copyButton.classList.add('bg-[#073b3a]', 'text-[#3bc196]', 'hover:bg-[#073b3a]');  // Add the background and text color classes
+
+                    // After 1.5 seconds, reset the button text and remove the classes
+                    setTimeout(() => {
+                        copyButton.textContent = 'Copy Email';
+                        copyButton.classList.remove('bg-[#073b3a]', 'text-[#3bc196]', 'hover:bg-[#073b3a]');  // Remove the classes
+                    }, 1500);
+                }).catch((error) => {
+                    console.error('Failed to copy text: ', error);
+                });
+            });
+
+
+            // Carousel functionality
+            const carousel = document.getElementById('indicators-carousel');
+            const prevButton = document.querySelector('[data-carousel-prev]');
+            const nextButton = document.querySelector('[data-carousel-next]');
+            let currentSlide = 0;
+            const slides = carousel.querySelectorAll('[data-carousel-item]');
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('hidden', i !== index);
+                    slide.setAttribute('aria-hidden', i !== index);
+                });
+                currentSlide = index;
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            // Initialize first slide
+            showSlide(0);
         });
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
 
 
-    // Copy email functionality
-    const copyButton = document.getElementById('copyButton');
-const emailInput = document.getElementById('emailInput');
 
-copyButton.addEventListener('click', () => {
-    // Select the email input field content
-    emailInput.select();
-    emailInput.setSelectionRange(0, 99999);  // For mobile devices
+        const projects = [
+    {
+        link: "https://www.playbook.com/s/litrato-by-charles/beyeCiXNqqBAdEWHDcTEW1nu",
+        imagePath: "./assets/Project2.webp",
+        title: "PRE-DEBUT PHOTOSHOOT",
+        description: "A creative pre-debut photoshoot featuring Lavigne Lyka, designed to celebrate her transition into adulthood."
+    },
+    {
+        link: "https://www.playbook.com/s/litrato-by-charles/ezxLecgd3uLiamgxwmSeFMnz",
+        imagePath: "./assets/exp.webp.jpg",
+        title: "BUYLUGANAY '23",
+        description: "Documented Filamer Christian University's Senior High School Intramurals."
+    },
+    
+    {
+        link: "https://www.facebook.com/fcuthes/posts/718351036979716",
+        imagePath: "./assets/Experience2jpg.webp",
+        title: "119TH FOUNDATION ANNIVERSARY",
+        description: "Documented Filamer Christian University's 119th Foundation Anniversary for The Hillside Echo - Senior."
+    },
+    {
+        link: "https://www.facebook.com/share/p/1AmYHrSXKN/",
+        imagePath: "./assets/intramcapsu.jpg",
+        title: "INTRAMURALS '24",
+        description: "Documented CapSU's Intramurals for Pundar Publication."
+    },
+    {
+        link: "https://www.facebook.com/thehillsidecho/posts/930408055751910?rdid=rUdphPdoY7dofmKH",
+        imagePath: "./assets/Experience1.webp",
+        title: "THE HILLSIDE ECHO PHOTOGRAPHY CONTEST",
+        description: "Placed 3rd in a photography contest organized by The Hillside Echo."
+    },
+    {
+        link: "https://fcu-darwin1223-24.vercel.app/",
+        imagePath: "./assets/Project1.webp",
+        title: "DARWIN'S MEMOIR",
+        description: "A collection of memories from Darwin’s senior high journey, cherishing achievements and connections."
+    },
+    {
+        link: "",
+        imagePath: "./assets/capstone.webp",
+        title: "FIREGUARD: A FIRE AND SMOKE DETECTING ROBOT",
+        description: "Built and coded a robot that detects fires, senses gas leaks, alerts users, and extinguishes flames with a water pump."
+    },
+    // Add more project objects as needed
+];
 
-    // Use Clipboard API to copy the email text
-    navigator.clipboard.writeText(emailInput.value).then(() => {
-        // Change button text to 'Copied!' and add the success class
-        copyButton.textContent = 'Copied!';
-        copyButton.classList.add('bg-[#073b3a]', 'text-[#3bc196]', 'hover:bg-[#073b3a]');  // Add the background and text color classes
+const projectCardsContainer = document.getElementById('project-cards');
+const cardTemplate = document.getElementById('project-card-template');
 
-        // After 1.5 seconds, reset the button text and remove the classes
-        setTimeout(() => {
-            copyButton.textContent = 'Copy Email';
-            copyButton.classList.remove('bg-[#073b3a]', 'text-[#3bc196]', 'hover:bg-[#073b3a]');  // Remove the classes
-        }, 1500);
-    }).catch((error) => {
-        console.error('Failed to copy text: ', error);
-    });
+projects.forEach(project => {
+    const card = cardTemplate.content.cloneNode(true);
+    
+    const links = card.querySelectorAll('a');
+    links.forEach(link => link.href = project.link);
+    
+    const img = card.querySelector('img');
+    img.src = project.imagePath;
+    img.alt = project.title;
+    
+    const title = card.querySelector('h5');
+    title.textContent = project.title;
+    
+    const description = card.querySelector('p');
+    description.textContent = project.description;
+    
+    projectCardsContainer.appendChild(card);
 });
 
 
-    // Carousel functionality
-    const carousel = document.getElementById('indicators-carousel');
-    const prevButton = document.querySelector('[data-carousel-prev]');
-    const nextButton = document.querySelector('[data-carousel-next]');
-    let currentSlide = 0;
-    const slides = carousel.querySelectorAll('[data-carousel-item]');
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('hidden', i !== index);
-            slide.setAttribute('aria-hidden', i !== index);
+
+        //ScrollRevealJs
+        const defaultConfig = {
+            distance: '30px',
+            duration: 1200,
+            opacity: 0,
+        };
+
+        // For elements with class "reveal-up"
+        ScrollReveal().reveal('.up', {
+            ...defaultConfig,
+            origin: 'bottom', // Reveal from bottom to top
         });
-        currentSlide = index;
-    }
 
-    prevButton.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    });
+        ScrollReveal().reveal('.rtrue', {
+            ...defaultConfig,
+            reset: true, // Reset true
+        });
 
-    nextButton.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    });
+        ScrollReveal().reveal('.rscale', {
+            ...defaultConfig,
+            scale: [0.5,1], // Reset true
+        });
 
-    // Initialize first slide
-    showSlide(0);
-});
+
+        ScrollReveal().reveal('.delay-l', {
+            ...defaultConfig,
+            delay: 1650, // Reset true
+        });
+
+        // For elements with class "reveal-down"
+        ScrollReveal().reveal('.down', {
+            ...defaultConfig,
+            origin: 'top', // Reveal from top to bottom
+        });
+
+        // For elements with class "reveal-left"
+        ScrollReveal().reveal('.right', {
+            ...defaultConfig,
+            origin: 'left', // Reveal from left to right
+        });
+
+        // For elements with class "reveal-right"
+        ScrollReveal().reveal('.left', {
+            ...defaultConfig,
+            origin: 'right', // Reveal from right to left
+        });
 
 
     </script>

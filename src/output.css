@@ -651,10 +651,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -701,10 +697,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .line-clamp-2 {
@@ -1113,6 +1105,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1146,21 +1143,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-32 {
@@ -1289,6 +1271,10 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-\[0\.25\] {
+  opacity: 0.25;
 }
 
 .opacity-\[0\.2\] {
